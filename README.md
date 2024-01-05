@@ -1,1 +1,98 @@
 # VHBay
+
+
+Dự án VHBay:
+- Phát triển trên: Node.js
+- Framework: Express.js (Back-end), Preact (Front-end)
+- Version: 1.0.0
+- Cơ sở dữ liệu: MongoDB
+- HTTP Library: Axios
+- Quản lý trạng thái: Redux
+
+Cấu trúc:
+- /VHBay
+  - /client
+    - /src
+      - /components
+        - /admin
+          - /post
+            - List.js    // Hiển thị thông báo từ admin
+        - /user
+          - /notification
+            - Notifications.js  // Hiển thị thông báo cho người dùng
+          - /tools
+            - /textProcessor
+              - TextProcessor.js  // Công cụ xử lý văn bản
+            - /2FA
+              - TwoFactorAuth.js  // Công cụ lấy mã 2FA
+            - /fbUid
+              - FacebookUid.js   // Công cụ lấy Facebook UID
+          - /services
+            - /fb
+              - /buff
+                - Like.js    // Buff Like cho Facebook
+                - Share.js   // Buff Share cho Facebook
+                - Follow.js  // Buff Follow cho Facebook
+            - /tiktok
+              - Follow.js    // Follow cho TikTok
+              - Comment.js   // Comment cho TikTok
+              - Tim.js       // Tim cho TikTok
+            - /youtube
+              - LuotXem.js   // Lượt xem cho YouTube
+              - Follow.js    // Follow cho YouTube
+              - Like.js      // Like cho YouTube
+              - Comment.js   // Comment cho YouTube
+  - /server
+    - /routes
+      - api
+        - account.js
+        - proxy.js
+        - email.js
+        - server.js
+        - vps.js
+        - hosting.js
+        - credit.js
+        - payment.js
+        - user.js
+        - gift.js
+        - post.js
+        - file.js
+        - chat.js
+        - tools.js
+        - services.js
+    - /config
+      - configdatabase.js
+    - app.js
+  - /public
+    - /css
+      - style.css
+    - /images
+    - /icons
+    - /libs
+      - /lazyload
+        - lazyload.js
+  - /views
+    - index.ejs
+    - login.ejs
+    - register.ejs
+    - /user
+      - /dashboard
+        - Dashboard.js
+      - /notification
+        - Notifications.js
+      - CreditInfo.js
+      - ChangePassword.js
+      - OrderHistory.js
+      - TransactionHistory.js
+    - /admincp
+      - /views
+        - dashboard.ejs
+        - userManagement.ejs
+        - creditManagement.ejs
+        - orderManagement.ejs
+        - systemSettings.ejs
+        - giftManagement.ejs
+        - postManagement.ejs
+        - fileManagement.ejs
+        - chatManagement.ejs
+- package.json
